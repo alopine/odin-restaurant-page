@@ -5,6 +5,14 @@
     text-align: center;
     border: 1px solid red;
 }
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 50vw;
+}
 
 #content {
     display: flex;
@@ -19,9 +27,5 @@ ul {
 }
 
 li {
-    
-}
-
-main {
-    margin: 1rem;
+    width: 10%;
 }
