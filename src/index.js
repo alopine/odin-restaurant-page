@@ -14,7 +14,7 @@ function setupListeners() {
     document.querySelectorAll("li").forEach((tab) => {
         tab.addEventListener("click", () => {
             // Remove active class from other tab
-            document.querySelector(".active").classList.remove("active");
+            document.querySelector(".active").removeAttribute("class");
             // Add active to current tab
             tab.setAttribute("class", "active");
             const call = tab.textContent;

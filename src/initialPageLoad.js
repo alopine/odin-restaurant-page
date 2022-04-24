@@ -2,6 +2,11 @@ function loadPage(){
     // Create and append header to body
     const header = document.createElement("header");
     document.body.appendChild(header);
+    // Create and append h1 to header
+        // Create and append h1 to div
+    const h1 = document.createElement("h1");
+    h1.textContent = "Odin's Burgers";
+    header.appendChild(h1);
     // Create and append ul to header
     const ul = document.createElement("ul");
     header.appendChild(ul);
