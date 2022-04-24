@@ -29,7 +29,7 @@ header, ul {
     margin: 1rem 0;
 }
 
-h1, h2, li {
+h1, h2, h3, li {
     color: #00473e;
 }
 
@@ -69,4 +69,8 @@ table {
 
 td {
     text-align: left;
+}
+
+h3 {
+    margin-top: 1rem;
 }

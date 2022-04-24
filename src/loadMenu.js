@@ -16,18 +16,16 @@ function loadMenu() {
         ["Creamy Mushroom Burger", "$7"],
         ["Spicy Chicken Burger", "$6"],
         ["BBQ Burger", "$9"]
-    ]
-    // Create row
+    ];
+    // Create row for each menu item
     menuItems.forEach((item) => {
         const row = table.insertRow(-1);
-        item.forEach((line) => {
+        // Create cell for each item entry
+        item.forEach((entry) => {
             const cell = row.insertCell(-1);
-            cell.innerText = line;
+            cell.innerText = entry;
         });
     });
-    // array for each, create row
-        // for each element in array
-            // create cell, add element string to cell text content, append to row
 }
 
 
