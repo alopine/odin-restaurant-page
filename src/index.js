@@ -1,1 +1,4 @@
-window.alert("Hello world!");
+import './style.css';
+import {loadPage} from './initialPageLoad.js';
+
+loadPage();
