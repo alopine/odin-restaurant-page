@@ -5,13 +5,22 @@
     text-align: center;
     border: 1px solid red;
 }
+
 html {
     display: flex;
     justify-content: center;
 }
 
 body {
-    width: 50vw;
+    width: 75vw;
+    height: 100vw;
+    background-color: #f2f7f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #475d5b;
+}
+
+h1, h2 {
+    color: #00473e;
 }
 
 #content {
@@ -22,10 +31,16 @@ body {
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    column-gap: 1rem;
+    justify-content: space-around;
 }
 
 li {
-    width: 10%;
+    color: #00473e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.active {
+    text-decoration: underline;
 }

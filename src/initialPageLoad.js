@@ -12,6 +12,12 @@ function loadPage(){
         li.textContent = tabs[tab];
         ul.appendChild(li);
     }
+    // Set home tab to active
+    document.querySelector("li").classList.add("active");
+    // Create and append div#content to body
+    const div = document.createElement("div");
+    div.id = "content";
+    document.body.appendChild(div);
 }
 
 export {loadPage}

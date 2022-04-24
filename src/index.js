@@ -6,31 +6,25 @@ import {loadContact} from './loadContact.js';
 
 window.onload = () => {
     loadPage();
-    createDiv();
     setupListeners();
     loadHome();
 }
 
-function createDiv() {
-    const div = document.createElement("div");
-    div.id = "content";
-    document.body.appendChild(div);
-}
-
-
 function setupListeners() {
     document.querySelectorAll("li").forEach((tab) => {
         tab.addEventListener("click", () => {
+            // Remove active class from other tab
+            document.querySelector(".active").classList.remove("active");
+            // Add active to current tab
+            tab.setAttribute("class", "active");
             const call = tab.textContent;
             changeTab(call);
         });
     })
 }
 
-
 function changeTab(tabName) {
-    document.body.removeChild(document.body.lastChild);
-    createDiv();
+    document.getElementById("content").innerText = "";
     switch(tabName) {
         case "Home":
             loadHome();
